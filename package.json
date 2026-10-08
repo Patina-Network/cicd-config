@@ -2,10 +2,26 @@
   "name": "@patina-network/cicd-config",
   "version": "1.0.0",
   "type": "module",
-  "files": [".oxfmtrc.json", ".oxlintrc.json", "tsconfig.json"],
+  "files": [
+    "oxfmt.js",
+    "oxfmt.d.ts",
+    "oxlint.js",
+    "oxlint.d.ts",
+    "tsconfig.json"
+  ],
   "exports": {
-    "./oxfmt": "./.oxfmtrc.json",
-    "./oxlint": "./.oxlintrc.json",
+    "./oxfmt": {
+      "types": "./oxfmt.d.ts",
+      "default": "./oxfmt.js"
+    },
+    "./oxlint": {
+      "types": "./oxlint.d.ts",
+      "default": "./oxlint.js"
+    },
     "./tsconfig": "./tsconfig.json"
+  },
+  "peerDependencies": {
+    "oxfmt": ">=0.72.0",
+    "oxlint": ">=1.87.0"
   }
 }
