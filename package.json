@@ -1,0 +1,11 @@
+{
+  "name": "@patina-network/cicd-config",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [".oxfmtrc.json", ".oxlintrc.json", "tsconfig.json"],
+  "exports": {
+    "./oxfmt": "./.oxfmtrc.json",
+    "./oxlint": "./.oxlintrc.json",
+    "./tsconfig": "./tsconfig.json"
+  }
+}
