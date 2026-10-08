@@ -29,7 +29,7 @@ Replace <full-commit-sha> with the latest commit on `main` branch.
 ### Formatter: .github/scripts/oxfmt.config.ts
 
 ```ts
-import shared from "@Patina-Network/cicd-config/oxfmt" with { type: "json" };
+import shared from "@Patina-Network/cicd-config/oxfmt";
 
 export default {
   ...shared,
@@ -39,7 +39,7 @@ export default {
 ### Linter: .github/scripts/oxlint.config.ts
 
 ```ts
-import shared from "@Patina-Network/cicd-config/oxlint" with { type: "json" };
+import shared from "@Patina-Network/cicd-config/oxlint";
 
 export default {
   ...shared,
