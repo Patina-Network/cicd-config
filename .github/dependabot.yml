@@ -1,7 +1,7 @@
 version: 2
 
 multi-ecosystem-groups:
-  ci:
+  cicd:
     schedule: { interval: weekly }
     commit-message: { prefix: "deps(ci)" }
   # uncomment this section to run dependabot on tooling that is not part of the main app and/or is not very important to the main repository
@@ -10,9 +10,9 @@ multi-ecosystem-groups:
   #   commit-message: { prefix: "deps(non-main)" }
 
 updates:
-  # ci
+  # cicd
   - package-ecosystem: bun
     directory: /
     patterns: ["*"]
     cooldown: { default-days: 7 }
-    multi-ecosystem-group: ci
+    multi-ecosystem-group: cicd
